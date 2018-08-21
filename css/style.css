@@ -1,0 +1,18 @@
+@charset "UTF-8";
+*{box-sizing:border-box;}
+
+
+#main_header{width:100%;}
+#main_gnb_wrap{width:100%;border-bottom:1px solid #ddd;height:30px;}
+#main_gnb{width:980px;margin:0 auto;background:#ccc;}
+#main_gnb{content:"";clear:both;display:block;}
+#gnb{padding-top: 5px;float: right;}
+#gnb
+#gnb>ul:after{content:"";clear: both;display:block;}
+
+#gnb>ul>li{float:left;border-left:1px solid #000;}
+#gnb>ul>li:first-child{border-left:none;}
+#gnb>ul>li>a{display:block;padding:0 10px;
+height:20px;line-height:20px;color:#fff;}
+#gnb>ul>li>a:hover{color:#000;}
+
