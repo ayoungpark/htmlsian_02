@@ -11,15 +11,16 @@
 	<script src="./js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.slider_01').bxSlider({
+			var myslider = $('.slider_01').bxSlider({
 				auto:true
 			});
-			
-			$('.side_bottom').bxSlider({
-				auto:true
+			var myslider = $('.slider22').bxSlider({
+				auto:true,
+				controls:false
 			});
-
 		});
+
+		
 
 		
 
@@ -33,12 +34,14 @@
 
 </head>
 <body>
+
+<!-- 상단 -->
+
 	<div id="header">
 		<div id="main_gnb_wrap">
 			<div id="main_gnb">
 				<nav id="gnb">
 					<ul>
-
 						<li><a href="#">글자크기</a></li>
 						<li><a href="#"><img src="./images/icon_01.png" alt="icon_01">
 						<li><a href="#">찾아오시는길</a></li>
@@ -54,8 +57,7 @@
 					</ul>
 				</nav>
 			</div>
-		</div>
-
+		</div>	
 		<div id="main_logo_wrap">
 			<div id="logo_wrap">
 				<h2>한 국 대 학 교</h2>
@@ -83,6 +85,10 @@
 			</div>
 		</div>
 	</div>
+	
+
+<!-- 백그라운드 ~ 안에 레이아웃들 -->
+
 	<div id="article">
 		<div id="article_back_bg">
 			<div class="article_text">
@@ -114,18 +120,24 @@
 
 
 					</div>
+
+
 				</div>
+
+
 			</div>
+
+
 			<div class="article_phimg_02">
 				<div class="row">
 					<div class="span_02">
 
 						<div class="slider_02">
 							<div class="viewimg01"><img src="./images/side_02.jpg" alt="">
-							<p><strong>APP</strong>으로<br><strong>스마트 도서관</strong><br>바로이용하자 !</strong><br><br>모바일 열람증은<br>도서관 자료실 / 도서대출에<br>사용 할 수 있습니다.
+							<p><strong>APP</strong>으로<br><strong>스마트 도서관</strong><br>바로이용하자 !<br><br>모바일 열람증은<br>도서관 자료실 / 도서대출에<br>사용 할 수 있습니다.</p>
 							<ul>
 								<li>
-									<a href="#">자세히보기 ▶</a></p>
+									<a href="#">자세히보기 ▶</a>
 								</li>
 							</ul>
 							</div>
@@ -133,9 +145,16 @@
 					</div>
 				</div>
 			</div>
-			<section class="cintainer">
-				<div class="row">
-					<div class="span_4" id="darkblue">
+		
+	
+
+
+
+
+
+		<section class="cintainer">
+			<div class="row">
+				<div class="span_4" id="darkblue">
 						<h1>HOT LINK</h1>
 						<img src="./images/icon_07.png" alt="">
 						<img src="./images/icon_08.png" alt="">
@@ -143,8 +162,8 @@
 						<a href="#">국제교류<br>센터</a>
 						<a href="#">원격지원<br>시스템</a>
 						<a href="#">예산/결산<br>공고</a>
-					</div>
-					<div class="span_4" id="blue"><h1>공지사항</h1>
+				</div>
+				<div class="span_4" id="blue"><h1>공지사항</h1>
 					<ul class="mini">
 						<li><a href="#">[공지] 한국대학교 웹진에 대하여</a></li><p>2016-06-12</p>
 						<li><a href="#">[공지] 우수대학교 선정 수상</a></li><p>2016-06-12</p>
@@ -153,53 +172,87 @@
 						
 					</ul>
 
-					</div>
-					<div class="span_4" id="white"><h1>SNS NEWS</h1>
+				</div>
+				<div class="span_4" id="white"><h1>SNS NEWS</h1>
 						<img src="./images/side_06.jpg" alt=""><p>한국 대학교는 2017<br>학년도 신입생 입학<br>식을 3월 2일(목)<br> 본교 종합체육관에서 진행</p>
 						<img src="./images/icon_10.png" id="pas" alt="">
-					</div>
-					<div class="span_4" id="pk">
+				</div>
+				<div class="span_4" id="pk">
 						<div class="text_1"><p>캠퍼스 투어</p></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span_2">
+					<div id="paly_button">
+							<img src="./images/icon_11.png" alt="">
 					</div>
 				</div>
-				<div class="row">
-					<div class="span_2">
-						<div id="paly_button">
-							<img src="./images/icon_11.png" alt="">
-						</div>
-					</div>
-					<div class="span_22">
+				<div class="span_22">
 						<div class="side_slider" id="bt">
-							<div class="side_bottom">
-								<ul>
-									<li>
-										<img src="./images/side_05.jpg" alt="">
-										<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
-										<div class="button">입학사전예약 ▶</div></li>
-									<li>
-										<img src="./images/side_05.jpg" alt="">
-										<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
-										<div class="button">입학사전예약 ▶</div></li>
-									<li>
-										<img src="./images/side_05.jpg" alt="">
-										<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
-										<div class="button">입학사전예약 ▶</div>
-									</li>
-									<li>
-										<img src="./images/side_05.jpg" alt="">
-										<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
-										<div class="button">입학사전예약 ▶</div>
-									</li>
+							<div>
+								<ul class="slider22">
+									<li><img src="./images/side_05.jpg" alt="">
+									<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
+									<div class="button">입학사전예약 ▶</div></li>
+									<li><img src="./images/side_05.jpg" alt="">
+									<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
+									<div class="button">입학사전예약 ▶</div></li>
+									<li><img src="./images/side_05.jpg" alt="">
+									<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
+									<div class="button">입학사전예약 ▶</div></li>
+									<li><img src="./images/side_05.jpg" alt="">
+									<p>2017년 신·편입생2차 모집<br><strong>2017.7.1 ~ 7.10</strong></p>
+									<div class="button">입학사전예약 ▶</div></li>
 								</ul>
 							</div>
 						</div>
-					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 		
+		<div class="last_bottom">
+			<div class="text_bottom_01">
+				<p>학사일정 < 2016 07 ></p>
+
+			</div>
+		 <div class="text_bottom_02">
+		 	<p><strong> 2016-1학기 성적 열람 및 상담 신청</strong> 성적 열람몇 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이 가능합니다.</p>
+		 </div>
+		 <div class="text_button">
+		 	<img src="./images/button_01.png" alt="">
+		 	<img src="./images/button_02.png" alt="">
+		 </div>
+			</div>
+
+
+
+		</div>
+
+		<!-- ↓백그라운드 마지막 -->
 	</div>
 
+<div id="footer">
+		<div class="footer_wrap">
+			<div class="footer_menu">
+				<ul class=footer1>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">한국대학교</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이용정책</a></li>
+					<li><a href="#">입점/제휴문의&nbsp;및&nbsp;광고</a></li>
+					<li><a href="#">이메일&nbsp;무단수집거부</a></li>
+				</ul>
+				<div class="footer_box1">
+				대표자&nbsp;:&nbsp;홍길동&nbsp;&nbsp;&nbsp;주소&nbsp;:&nbsp;서울특별시&nbsp;구로구&nbsp;구로로&nbsp;300(구로동&nbsp;6가)&nbsp;&nbsp;&nbsp;
+				사업자등록번호&nbsp;:&nbsp;000-00-00000&nbsp;&nbsp;&nbsp;
+				<br>
+				통신판매업&nbsp;신고번호&nbsp;:&nbsp;제&nbsp;1234-서울&nbsp;구로구-1004호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보관리&nbsp;책임자&nbsp;:&nbsp;홍길동<br>
+				고객센처&nbsp;:&nbsp;1234-5678&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAX&nbsp;:&nbsp;02-1234-5678&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<address style="display: inline-block; font-style: normal;">HANGUKUNIVERSITY@HANGUK.COM</address>
+				</div>
+				<div class="footer_box2"><b>COPYRIGHT&nbsp;(c)&nbsp;HANGUK.&nbsp;ALL&nbsp;RIGHTS&nbsp;RESERVED.</b></div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
