@@ -600,22 +600,41 @@ body {}
 }
 
 #footer {
-    width:100%;
-
+    width:90%;
+    overflow: hidden;
 
 }
 .footer_wrap {
-    width: 1200px;
-    float: right;
+    width: 1100px;
+    float:right;
+   
 }
 .footer_menu {
-    width: 720px;
+    width: 1200px;
     float: left;
+    padding: 20px;
 }
 .footer1 {
     float: left;
 }
+.footer1 ul {}
 .footer1 li {
     float: left;
-    padding-right: 10px;
+    padding: 0 20px 0 20px;
+    border-left: 1px solid #000;
+    font-weight: bold;     
+}
+.footer1 li:first-child{border-left:none;}
+
+.footer1 li:hover{
+    background:#cccccc;  
+}
+
+.footer_box1 {
+    font-size: 12px;
+    padding:40px 20px 20px 20px;
+    line-height:20px;
+}
+.footer_box2 {
+    padding: 0 20px;
 }
